@@ -27,7 +27,7 @@ To extract hidden data, the program takes a steganographic image as input. It re
 
 Clone the repository:
 ```shell
-git clone https://github.com/your-username/image-steganography.git
+git clone https://github.com/wjsekrud/T2ISteganography.git
 ```
 Build the project using your preferred C++ compiler.
 Run the program with the desired mode and arguments:
