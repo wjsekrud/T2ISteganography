@@ -36,10 +36,13 @@ To hide data:
 ```shell
 ./steg --hide --text path/to/text/file --image path/to/image/file --output path/to/output/file
 ```
+- or type "H" in the CLI of the built executable and select text file to hide and target image in interactive windows which show up right next.
+
 To extract data:
 ```shell
 Copy code./steg --extract --stego path/to/stego/image --output path/to/output/file
 ```
+- or type "E" in the CLI of the built executable and select target image to extract and extract location in interactive windows which show up right next.
 
 
 The program will perform the requested operation and display a success message upon completion.
