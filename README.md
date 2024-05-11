@@ -1,4 +1,4 @@
-## Image Steganography
+## Text-into-Image Steganography
 
 This project implements image steganography using the Least Significant Bit (LSB) technique. 
 
