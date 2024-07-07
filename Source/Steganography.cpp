@@ -136,6 +136,7 @@ void Steganography::extractLSB(const std::string& stegoImage, const std::string&
             Vec3b pixel = img.at<Vec3b>(row, col);
             for (int ch = 0; ch < 3; ++ch) {
                 extractedBits.push_back(pixel[ch] & 1);
+                cout << row << "," << col << "val: " << extractedBits[extractedBits.size() - 1] << endl;
             }
         }
     }
@@ -365,6 +366,9 @@ void Steganography::extract(const std::string& stegoImage, const std::string& or
             if ((i > stegoTarget.rows / 2 + stegoTarget.rows * 0.05 || i < stegoTarget.rows / 2 + stegoTarget.rows * 0.05) &&
                 (j > stegoTarget.cols / 2 + stegoTarget.cols * 0.05 || j < stegoTarget.cols / 2 - stegoTarget.cols * 0.05)) {
                 extractedBits.push_back(stegoTarget.at<uchar>(i, j) != origTarget.at<uchar>(i, j));
+                cout << "uv: " << i << ", " << j << "            val: " << extractedBits[extractedBits.size() - 1] << endl;
+                
+
                 //cout << (stegoTarget.at<uchar>(i, j) != origTarget.at<uchar>(i, j)) << i << j << endl;
             }
         }
